@@ -1,0 +1,187 @@
+/* Base styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.about-title {
+    position: relative;
+}
+.about-title h1 {
+    font-size: 80px;
+    padding: 0px 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.about-title img {
+    position: absolute;
+    right: 700px;
+    bottom: 100px; /* Ensure the correct spacing */
+    height: 300px;
+    width: auto;
+}
+.about-sections {
+    display: flex;
+    text-align: center;
+    gap: 80px;
+}
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Corrected typo from 2opx to 20px */
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-skills {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.about-skill p {
+    font-size: 24px;
+    font-weight: 500;
+    min-width: 150px;
+}
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%);
+}
+.about-achievements {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.about-achievement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.about-achievements h1 {
+    font-size: 60px;
+    font-weight: 600;
+    background-color: #DF8908;
+    background-clip: text;
+    -webkit-background-clip: text; /* Corrected typo 'webbkit' to 'webkit' */
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.about-achievement:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .about {
+        margin: 50px 50px; /* Reduced margins for tablets and small laptops */
+    }
+    .about-title h1 {
+        font-size: 60px; /* Reduced font size for smaller screens */
+        padding: 0px 20px; /* Adjusted padding */
+    }
+    .about-title img {
+        right: 100px; /* Adjusted position */
+        height: 200px; /* Reduced height */
+    }
+    .about-sections {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        gap: 40px; /* Reduced gap */
+    }
+    .about-right {
+        gap: 40px; /* Reduced gap */
+    }
+    .about-para {
+        font-size: 18px; /* Reduced font size */
+    }
+    .about-skill {
+        gap: 30px; /* Reduced gap */
+    }
+    .about-skill p {
+        font-size: 20px; /* Reduced font size */
+    }
+    .about-achievements {
+        flex-direction: column; /* Stack achievements vertically */
+        gap: 20px; /* Reduced gap */
+        margin-bottom: 40px; /* Reduced margin */
+    }
+    .about-achievement {
+        gap: 10px; /* Reduced gap */
+    }
+    .about-achievements h1 {
+        font-size: 50px; /* Reduced font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 30px 20px; /* Further reduced margins for mobile screens */
+    }
+    .about-title h1 {
+        font-size: 40px; /* Further reduced font size */
+        padding: 0px 10px; /* Further adjusted padding */
+    }
+    .about-title img {
+        right: 0; /* Center image on mobile screens */
+        height: 150px; /* Further reduced height */
+    }
+    .about-sections {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px; /* Further reduced gap */
+    }
+    .about-right {
+        gap: 20px; /* Further reduced gap */
+    }
+    .about-para {
+        font-size: 16px; /* Further reduced font size */
+    }
+    .about-skill {
+        gap: 20px; /* Further reduced gap */
+    }
+    .about-skill p {
+        font-size: 18px; /* Further reduced font size */
+    }
+    .about-achievements {
+        flex-direction: column; /* Stack achievements vertically */
+        gap: 10px; /* Further reduced gap */
+        margin-bottom: 20px; /* Further reduced margin */
+    }
+    .about-achievement {
+        gap: 5px; /* Further reduced gap */
+    }
+    .about-achievements h1 {
+        font-size: 40px; /* Further reduced font size */
+    }
+    .about img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

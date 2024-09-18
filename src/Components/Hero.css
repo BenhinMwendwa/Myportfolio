@@ -1,0 +1,111 @@
+/* Base styles */
+.hero {
+    text-align: center;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+.hero img {
+    margin-top: 150px;
+    width: 400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 50%;
+}
+.hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B923E1 100%);
+    color: #DA7C25;
+}
+.hero p {
+    width: 70%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect {
+    padding: 25px 74px;
+    border-radius: 50px;
+    color: goldenrod;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-connect:hover {
+    transform: scale(1.05);
+    color: blue;
+}
+.hero-resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-resume:hover {
+    transform: scale(1.05);
+    color: #DA7C25;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 20px; /* Reduced gap for tablets and small laptops */
+    }
+    .hero img {
+        width: 300px; /* Adjusted width for tablets */
+    }
+    .hero h1 {
+        width: 80%; /* Increased width for better fit */
+        font-size: 40px; /* Reduced font size */
+    }
+    .hero p {
+        width: 80%; /* Increased width for better fit */
+        font-size: 20px; /* Reduced font size */
+    }
+    .hero-action {
+        gap: 16px; /* Reduced gap */
+        font-size: 20px; /* Reduced font size */
+    }
+    .hero-connect, .hero-resume {
+        padding: 20px 50px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        gap: 15px; /* Further reduced gap for mobile screens */
+    }
+    .hero img {
+        width: 200px; /* Further adjusted width for mobile screens */
+        margin-top: 100px; /* Adjusted margin for mobile screens */
+    }
+    .hero h1 {
+        width: 90%; /* Increased width for better fit */
+        font-size: 30px; /* Further reduced font size */
+    }
+    .hero p {
+        width: 90%; /* Increased width for better fit */
+        font-size: 18px; /* Further reduced font size */
+    }
+    .hero-action {
+        gap: 12px; /* Further reduced gap */
+        font-size: 18px; /* Further reduced font size */
+    }
+    .hero-connect, .hero-resume {
+        padding: 15px 40px; /* Further adjusted padding */
+    }
+}

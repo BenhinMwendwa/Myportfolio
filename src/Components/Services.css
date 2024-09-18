@@ -1,0 +1,138 @@
+/* Base styles */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 170px;
+    gap: 80px;
+}
+
+.services-title {
+    position: relative;
+}
+
+.services-title h1 {
+    font-size: 80px;
+    padding: 0px 30px;
+    font-weight: 600;
+}
+
+.services-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.services-format h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.services-format h2 {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+    font-size: 20px;
+    color: antiquewhite;
+    max-width: 300px;
+    line-height: 40px;
+}
+
+.services-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.services-format:hover {
+    transition: 0.3s;
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #3f0028, #582300);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .services {
+        margin: 80px 50px; /* Reduced margins for tablets and small laptops */
+        gap: 60px; /* Reduced gap between elements */
+    }
+
+    .services-title h1 {
+        font-size: 60px; /* Reduced font size for titles */
+    }
+
+    .services-format {
+        padding: 40px; /* Reduced padding */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr; /* Reduced columns for tablets */
+        gap: 30px; /* Reduced gap between items */
+    }
+
+    .services-format h3 {
+        font-size: 24px; /* Reduced font size for subheadings */
+    }
+
+    .services-format h2 {
+        font-size: 32px; /* Reduced font size for headings */
+    }
+
+    .services-format p {
+        font-size: 18px; /* Reduced font size for paragraphs */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin: 80px 20px; /* Further reduced margins for mobile screens */
+        gap: 40px; /* Further reduced gap between elements */
+    }
+
+    .services-title h1 {
+        font-size: 40px; /* Further reduced font size for titles */
+    }
+
+    .services-format {
+        padding: 20px; /* Further reduced padding */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 20px; /* Further reduced gap between items */
+    }
+
+    .services-format h3 {
+        font-size: 20px; /* Further reduced font size for subheadings */
+    }
+
+    .services-format h2 {
+        font-size: 28px; /* Further reduced font size for headings */
+    }
+
+    .services-format p {
+        font-size: 16px; /* Further reduced font size for paragraphs */
+    }
+}

@@ -1,0 +1,87 @@
+/* Base styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 170px;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li:hover {
+    background-color: #32323B;
+    color: goldenrod;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.nav-connect {
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: goldenrod;
+    font-size: 22px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .navbar {
+        margin: 20px 50px; /* Reduced margins for tablets and small laptops */
+    }
+
+    .nav-menu {
+        gap: 30px; /* Reduced gap between menu items */
+        font-size: 18px; /* Reduced font size */
+    }
+
+    .nav-connect {
+        padding: 8px 30px; /* Reduced padding */
+        font-size: 20px; /* Reduced font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        margin: 20px 20px; /* Further reduced margins for mobile screens */
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap between menu items */
+        font-size: 16px; /* Further reduced font size */
+        width: 100%; /* Ensure menu takes full width */
+        text-align: left; /* Align text to the left */
+    }
+
+    .nav-connect {
+        padding: 8px 20px; /* Further reduced padding */
+        font-size: 18px; /* Further reduced font size */
+    }
+    
+}

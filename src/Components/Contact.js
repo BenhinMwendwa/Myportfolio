@@ -50,7 +50,7 @@ function Contact() {
               <img src={Mail_icon} alt='mail' /><p>benhinmwendwa7@gmail.com</p>
             </div>
             <div className='contact-detail'>
-              <img src={Call} alt='call' /><p>017307513</p>
+              <img src={Call} alt='call' /><p>0717307513</p>
             </div>
             <div className='contact-detail'>
               <img src={Location} alt='location' /><p>Kenya</p>

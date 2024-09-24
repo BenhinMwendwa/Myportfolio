@@ -184,7 +184,7 @@
 
   .nav-menu li {
       flex-direction: row;
-      font-size: 10px;
+      font-size: 20px;
       padding-left: 100px;
       gap: 20px;
   }

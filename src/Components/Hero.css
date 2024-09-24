@@ -22,7 +22,9 @@
 }
 .hero h1 span {
     background: linear-gradient(270deg, #DF8908 10%, #B923E1 100%);
-    color: #DA7C25;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero p {
     width: 70%;

@@ -1,26 +1,27 @@
 import React from 'react'
 import './About.css'
-import pic from "./11.jpeg"
-import picc from "./12.jpeg"
+// import pic from "./11.jpeg"
+// import picc from "./12.jpeg"
 // import piccc from "./13.jpg"
 function About() {
   return (
     <div id ='about' className='about'>
       <div className='about-title'>
         <h1>About Me</h1>
-        <img src={pic} alt="Profile Pic" />
+        {/* <img src={pic} alt="Profile Pic" /> */}
         </div>
        
         <div className="about-sections">
            <div className="about-left">
             {/* <img src={picc} alt="new" /> */}
-            <h2>Benhin Mwendwa</h2>
+            {/* <h2>Benhin Mwendwa</h2> */}
             </div>
             <div className="about-right">
               <div className="about-para">
-              <p>I am a Full Stack Developer, passionate about creating engaging and user-centric websites. I have a deep love for technology and always strive to improve my skills and knowledge. I am currently working remotely and enjoy the freedom to travel and learn new things.</p>
-              <p>I have a Bachelor's Degree in Computer Science from a prestigious university in Kenya and a Master's Degree in Software Engineering from the same university. I am currently looking for opportunities to work on projects and contribute to open-source projects.</p>
-        
+              <p>I am a dedicated Full Stack Developer with a strong passion for creating engaging and user-centric websites. My love for technology drives me to continuously enhance my skills and stay updated with the latest trends in the field. I have a Bachelor's Degree in Applied Computing from KCA University, and I am currently furthering my education in Software Engineering at Moringa School.</p>
+<p>My professional experience includes working with Royalty Technologies and the ICT Authority, where I have gained hands-on expertise in computer hardware and software support, website development, network installation, and server configuration. I am fluent in English and Kiswahili, which allows me to effectively communicate and collaborate in diverse environments.</p>
+<p>I am actively seeking new opportunities to contribute to innovative projects and engage with open-source communities. I am also open to remote work, which provides me the flexibility to travel and explore new learning experiences.</p>
+
           </div>
           <div className="about-skills">
             <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}}/></div>
@@ -47,7 +48,7 @@ function About() {
       <hr/>
       <div className="about-achievement">
         <h1>15+</h1>
-        <p>Hppy Clients</p>
+        <p>Happy Clients</p>
       </div>
       </div></div>
     

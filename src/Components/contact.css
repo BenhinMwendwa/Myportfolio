@@ -166,10 +166,7 @@
         flex-direction: column; /* Stacks items vertically */
     }
 
-    .contact-left, .contact-right {
-        width: 100%;
-        padding: 0px;
-    }
+  
 
     .contact-right input, .contact-right textarea {
         width: 100%; /* Full width on small tablets and large mobile screens */

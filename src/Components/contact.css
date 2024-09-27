@@ -112,15 +112,30 @@
     height: 50px;
     width: 50px; /* Reduced in media queries */
 }
+/* Assuming the parent container has position: relative */
+.parent-container {
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    length: 80px;
+}
+
 .contact-success {
-    margin-top: 20px;
-    padding: 10px;
+    position: absolute;
+    top: -800px; /* Adjust as needed */
+    left: 50%; /* Center the element horizontally */
+    transform: translateX(-50%);
+    width: 80vw; /* Full viewport width */
+    padding: 30px; /* Adjust padding as needed */
     background-color: #d4edda;
-    border: 1px solid #c3e6cb;
+    border: 5px solid #c3e6cb;
     color: #155724;
     border-radius: 5px;
     text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
+
 
 /* Responsive styles */
 @media (max-width: 1024px) {

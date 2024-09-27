@@ -70,8 +70,10 @@ function Contact() {
 
       {/* Success message */}
       {isSubmitted && (
+        <div className='parent-container'>
         <div className='contact-success'>
           <p>{message}</p>
+        </div>
         </div>
       )}
     </div>

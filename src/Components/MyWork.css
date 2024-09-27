@@ -44,7 +44,7 @@
     display: flex;
     gap: 20px;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid black;
     cursor: pointer;
     transition: 0.4s;
     padding: 30px 60px;
@@ -52,7 +52,7 @@
     margin-bottom: 80px;
 }
 .my-work-show-more:hover {
-    background-color: #ff0fff;
+    transform: scale(1.1);
     gap: 30px;
     transition: 0.4s;
 }

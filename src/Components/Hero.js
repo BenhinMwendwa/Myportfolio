@@ -1,7 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Hero.css';
-import profile_img from './Image.jpeg';
+import profile_img from './ben.jpeg';
 
 const Hero = () => {
   const resumeLink = 'https://drive.google.com/file/d/135xqNF0twHazBNfRknWbDHMm7M_6dQzc/view?usp=sharing'; // Replace this with your actual Google Drive link

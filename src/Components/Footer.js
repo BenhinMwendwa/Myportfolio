@@ -11,10 +11,6 @@ function Footer() {
           <p>I am a full stack developer based in Kenya</p>
         </div>
         <div className='footer-top-right'>
-          <div className='footer-email-input'>
-            <input type="text" placeholder="Enter your email" />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
         </div>
       </div>
       <hr />

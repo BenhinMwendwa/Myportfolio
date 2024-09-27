@@ -39,7 +39,10 @@
 .nav-connect {
   padding: 10px 40px;
   border-radius: 50px;
-  background-color: goldenrod;
+  background: linear-gradient(270deg, #DF8908 10%, #B923E1 100%);
+  background-clip: text;
+  -webkit-background-clip: border-box;
+
   font-size: 22px;
   transition: 0.5s;
   cursor: pointer;

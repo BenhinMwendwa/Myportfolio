@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './contact.css';
 import Mail_icon from './mail.jpg';
 import Call from './call.jpg';
@@ -7,6 +7,13 @@ import Location from './loc.webp';
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [message, setMessage] = useState('');
+  const successMessageRef = useRef(null);
+
+  useEffect(() => {
+    if (isSubmitted && successMessageRef.current) {
+      successMessageRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [isSubmitted]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -27,12 +34,11 @@ function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      setIsSubmitted(true); // Update the state to show the success message
       setMessage('Thank you for contacting us! We will get back to you shortly.');
     } else {
-      setIsSubmitted(true);
       setMessage('Oops! Something went wrong. Please try again later.');
     }
+    setIsSubmitted(true); // Ensure this is set after setting the message
   };
 
   return (
@@ -71,9 +77,9 @@ function Contact() {
       {/* Success message */}
       {isSubmitted && (
         <div className='parent-container'>
-        <div className='contact-success'>
-          <p>{message}</p>
-        </div>
+          <div ref={successMessageRef} className='contact-success'>
+            <p>{message}</p>
+          </div>
         </div>
       )}
     </div>

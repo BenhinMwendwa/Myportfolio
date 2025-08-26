@@ -51,5 +51,5 @@ Follow these steps to run the portfolio locally:
 This is a personal portfolio project. Therefore, contributions are not expected. However, suggestions and feedback are always welcome! Feel free to fork the repository and adapt the code for your own use.
 
 📄 **License**
-This project is open source and available under the MIT License. // It's good practice to add a license.
+This project is open source and available under the MIT License. 
 
